@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue1">
+
+    <TextView
+        android:id="@+id/noteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Here"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/userreportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/noteTextView"
+        android:layout_below="@+id/noteTextView"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="9dp"
+        android:text="ชื่อผู้แจ้ง : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userReportTel"
+        android:layout_toEndOf="@+id/userReportTel"
+        android:text="username Here"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userTelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/userReportTel"
+        android:text="userTel Here"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userReportTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เบอร์ผู้แจ้ง : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_below="@+id/userreportName"
+        android:layout_alignStart="@+id/userreportName" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="วันที่-เวลา : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_below="@+id/userReportTel"
+        android:layout_alignStart="@+id/noteTextView" />
+
+    <TextView
+        android:id="@+id/datetimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/date"
+        android:layout_below="@+id/date"
+        android:text="Date-Time Here"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="สถานะ :"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/statusTextView"
+        android:layout_alignBottom="@+id/statusTextView"
+        android:layout_toStartOf="@+id/statusTextView" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Wait"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/noteTextView"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

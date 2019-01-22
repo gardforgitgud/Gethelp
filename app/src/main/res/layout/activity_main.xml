@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gr.mmv.gethelp.MainActivity"
+    android:background="@drawable/for_first">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginTop="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="216dp"
+            android:layout_height="55dp"
+            android:layout_above="@+id/use_logBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="65dp"
+            android:background="#ff0000"
+            android:text="สมัครสมาชิก"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp">
+
+        <Button
+            android:id="@+id/use_logBtn"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@+id/signupBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="234dp"
+            android:layout_weight="1"
+            android:background="@color/green_btn"
+            android:text="เข้าสู่ระบบสมาชิก"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+        <Button
+            android:id="@+id/off_logBtn"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@+id/signupBtn"
+            android:layout_below="@+id/signupBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/green_btn"
+            android:text="เข้าสู่ระบบเจ้าหน้าที่"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="314dp" />
+    </LinearLayout>
+
+</RelativeLayout>
